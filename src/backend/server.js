@@ -36,7 +36,7 @@ connectMongo(err => {
     if (err) throw err;
     console.log(`Covid-19 app server is running on ${port} 🚀`);
   });
-  console.log(`Mongo connected ${port} 🚀`);
+  console.log(`Mongo connected 🚀`);
 });
 
 // Serve index page

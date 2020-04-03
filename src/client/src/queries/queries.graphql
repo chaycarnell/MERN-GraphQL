@@ -1,0 +1,11 @@
+query getSomeUpdate {
+  someUpdate {
+    status
+  }
+}
+
+subscription onSomeUpdate {
+  someUpdate {
+    status
+  }
+}

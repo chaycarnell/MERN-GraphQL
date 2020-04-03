@@ -1,0 +1,11 @@
+type Update {
+  status: String
+}
+
+type Query {
+  someUpdate: Update
+}
+
+type Subscription {
+  someUpdate: Update
+}

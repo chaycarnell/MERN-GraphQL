@@ -1,4 +1,4 @@
-const { pubsub } = require('../../pubsub/pubsub');
+const { pubsub, subscriptions } = require('../../pubsub/pubsub');
 
 const resolver = {
   Query: {
@@ -6,7 +6,7 @@ const resolver = {
   },
   Subscription: {
     someUpdate: {
-      subscribe: () => pubsub.asyncIterator(['SOME_UPDATE'])
+      subscribe: () => pubsub.asyncIterator([subscriptions.SOME_UPDATE])
     }
   }
 };

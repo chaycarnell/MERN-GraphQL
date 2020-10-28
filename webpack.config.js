@@ -12,7 +12,7 @@ module.exports = () => {
       filename: 'bundle.js'
     },
     plugins: [
-      new CopyWebpackPlugin([{ from: './public/favicon.png' }]),
+      new CopyWebpackPlugin({ patterns: [{ from: './public/favicon.png' }] }),
       new webpack.EnvironmentPlugin({
         SERVER_URL: process.env.SERVER_URL
       })
